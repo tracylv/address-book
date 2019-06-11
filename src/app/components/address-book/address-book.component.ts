@@ -30,8 +30,10 @@ export class AddressBookComponent implements OnInit {
   }
 
   // handle check all logic
-  onCheckAll(event) {
-    this.addressBooks.forEach(item => item.checked = event.target && event.target.checked);
+  onCheckAll(checked: boolean) {
+    this.addressBooks.forEach(item => item.checked = checked);
+
+    this.checkAllValidate();
   }
 
   checkAllValidate() {
