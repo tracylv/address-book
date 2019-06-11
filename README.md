@@ -6,15 +6,17 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
 
-Run `ng serve --configuration=en` for setting the localization to 'en' (English)
-Run `ng serve --configuration=zh` for setting the localization to 'zh' (Chinese)
+Run `ng serve --configuration=en` for setting the localization to 'en' (English).
+
+Run `ng serve --configuration=zh` for setting the localization to 'zh' (Chinese).
 
 ## Build
 
 Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
 
-Run `ng build --configuration=en` for building package with 'en' locale (English)
-Run `ng build --configuration=zh` for building package with 'zh' locale (Chinese)
+Run `ng build --configuration=en` for building package with 'en' locale (English).
+
+Run `ng build --configuration=zh` for building package with 'zh' locale (Chinese).
 
 ## Code scaffolding
 
