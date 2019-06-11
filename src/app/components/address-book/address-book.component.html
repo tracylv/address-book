@@ -1,0 +1,35 @@
+<div class="address-book cell-container">
+  <h2 i18n="site header | address book header">Address Book</h2>
+  <ul>
+    <li>
+      <div class="head row">
+        <span class="cell cell-1"><input type="checkbox" [(checked)]="isAllChecked" (change)="onCheckAll($event)"></span>
+        <span class="cell cell-1" (click)="orderBy('id')" i18n>ID</span>
+        <span class="cell cell-2" (click)="orderBy('name')" i18n>Name</span>
+        <span class="cell cell-2" (click)="orderBy('location')" i18n>Location</span>
+        <span class="cell cell-2" (click)="orderBy('office')" i18n>Office</span>
+        <span class="cell cell-4 phone-cell-column">
+          <span class="cell cell-12 phone-cell" i18n>Phone</span>
+          <span class="cell cell-6" (click)="orderBy('phone', 'office')" i18n>Office</span>
+          <span class="cell cell-6" (click)="orderBy('phone', 'cell')" i18n>Cell</span>
+        </span>
+      </div>
+    </li>
+    <li *ngFor="let item of addressBooks" [class.selected]="item.checked">
+      <div class="content row">
+        <span class="cell cell-1"><input type="checkbox" [checked]="item.checked" (change)="onCheckChange($event, item)"></span>
+        <span class="cell cell-1">{{ item.id }}</span>
+        <span class="cell cell-2"><app-cell [text]="item.name" [update]="updateAddressBook(item, 'name')"></app-cell></span>
+        <span class="cell cell-2"><app-cell [text]="item.location" [update]="updateAddressBook(item, 'location')"></app-cell></span>
+        <span class="cell cell-2"><app-cell [text]="item.office" [update]="updateAddressBook(item, 'office')"></app-cell></span>
+        <span class="cell cell-2"><app-cell [text]="item.phone.office" [update]="updateAddressBook(item, 'phone', 'office')"></app-cell></span>
+        <span class="cell cell-2"><app-cell [text]="item.phone.cell" [update]="updateAddressBook(item, 'phone', 'cell')"></app-cell></span>
+      </div>
+    </li>
+  </ul>
+  <div class="operation-buttons row">
+    <button (click)="deleteAddressBooks()" class="cell cell-2" i18n>Delete</button>
+    <button (click)="addAddressBooks()" class="cell cell-2" i18n>Add</button>
+    <!-- the update behavior will be done inline, so not add the update button here -->
+  </div>
+</div>

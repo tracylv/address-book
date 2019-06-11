@@ -1,0 +1,19 @@
+.address-book-cell {
+  &, span, input {
+    display: block;
+    width: 100%;
+  }
+  span {
+    cursor: pointer;
+    min-height: 1.125rem;
+  }
+  input {
+    text-align: center;
+    font: inherit;
+    border: none;
+    &:focus {
+      outline: #000 auto 1px;
+      border: none;
+    }
+  }
+}

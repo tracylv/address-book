@@ -1,0 +1,4 @@
+<span class="address-book-cell">
+  <span  *ngIf="!editMode" (dblclick)="enterEditMode()" >{{ text }}</span>
+  <input *ngIf="editMode" #textInput type="text" [value]="text" (keyup.enter)="leaveEditMode(textInput.value)" (blur)="leaveEditMode(textInput.value)">
+</span>

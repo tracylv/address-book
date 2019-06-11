@@ -1,1 +1,63 @@
 /* You can add global styles to this file, and also import other style files */
+
+// divide the one row to 12 cell, and every cell take (100%)/12 width.
+.cell-container {
+  .row {
+    width: 100%;
+    display: block;
+
+    .cell {
+      display: inline-block;
+      padding: 0.625rem 0.3125rem;
+      box-sizing: border-box;
+    }
+      
+    .cell-1 {
+      width: 8.333%;
+    }
+    
+    .cell-2 {
+      width: 16.666%;
+    }
+    
+    .cell-3 {
+      width: 25%;
+    }
+        
+    .cell-4 {
+      width: 33.333%;
+    }
+    
+    .cell-5 {
+      width: 41.666%;
+    }
+    
+    .cell-6 {
+      width: 50%;
+    }
+    
+    .cell-7 {
+      width: 58.333%;
+    }
+      
+    .cell-8 {
+      width: 66.666%;
+    }
+    
+    .cell-9 {
+      width: 75%;
+    }
+    
+    .cell-10 {
+      width: 83.333%;
+    }
+         
+    .cell-11 {
+      width: 91.666%;
+    }
+        
+    .cell-12 {
+      width: 100%;
+    }
+  }
+} 

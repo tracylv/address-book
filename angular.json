@@ -55,6 +55,22 @@
                   "maximumError": "5mb"
                 }
               ]
+            },
+            "en": {
+              "aot": true,
+              "outputPath": "dist/address-book-en/",
+              "i18nFile": "src/locale/messages.en.xlf",
+              "i18nFormat": "xlf",
+              "i18nLocale": "en",
+              "i18nMissingTranslation": "error"
+            },
+            "zh": {
+              "aot": true,
+              "outputPath": "dist/address-book-zh/",
+              "i18nFile": "src/locale/messages.zh.xlf",
+              "i18nFormat": "xlf",
+              "i18nLocale": "zh",
+              "i18nMissingTranslation": "error"
             }
           }
         },
@@ -66,6 +82,12 @@
           "configurations": {
             "production": {
               "browserTarget": "address-book:build:production"
+            },
+            "en": {
+              "browserTarget": "address-book:build:en"
+            },
+            "zh": {
+              "browserTarget": "address-book:build:zh"
             }
           }
         },
