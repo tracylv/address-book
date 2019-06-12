@@ -2,6 +2,12 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.0.1.
 
+# Live demo
+
+1.  https://tracylv.github.io/address-book/en/  (English)
+
+2.  https://tracylv.github.io/address-book/zh/  (Chinese)
+
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
